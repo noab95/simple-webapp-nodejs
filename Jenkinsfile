@@ -1,4 +1,3 @@
-# Hello
 pipeline {
     agent any
     stages {
@@ -9,7 +8,7 @@ pipeline {
         }
         stage('Get SCM') {
             steps {
-                git "https://github.com/ranazrad/simple-webapp-nodejs.git"
+                git "https://github.com/noab95/simple-webapp-nodejs.git"
                 sh "cat Jenkinsfile"
             }
         }
